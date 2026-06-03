@@ -1,0 +1,199 @@
+/* Paleta accesible con contraste AA esperado */
+:root {
+  --bg: #f5f7fb;
+  --text: #1f2937;
+  --primary: #ff1616;
+  --primary-contrast: #ffffff;
+  --header-bg: #eef0f2; /* gris semi claro para la cabecera */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header,
+nav,
+main,
+section,
+footer {
+  padding: 16px;
+}
+
+/* Mantener el header visible en la parte superior */
+header {
+  background: var(--header-bg);
+  color: var(--text);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Hacer que el nav ocupe el espacio central y centre los items (menú simétrico) */
+nav {
+  background: transparent;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* centra el menú entre logo (izq) y borde (der) */
+}
+
+/* Lista del menú: más espacio y tamaño para mejor apariencia */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Enlaces del nav: color oscuro sobre fondo gris, buen espaciado y aspecto visual */
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background: rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+/* Logo: usar la imagen original (sin filtro), aumentar tamaño y adaptar responsive */
+.logo-link img {
+  width: 400px;      /* tamaño aumentado */
+  max-width: 45vw;   /* respeta pantallas pequeñas */
+  height: auto;
+  display: block;
+  filter: none;
+  -webkit-filter: none;
+}
+
+/* Ajustes responsive: reducir tamaño en móviles para no saturar la cabecera */
+@media (max-width: 720px) {
+  .logo-link img {
+    width: 140px;
+    max-width: 32vw;
+  }
+  nav a {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+  nav ul {
+    gap: 16px;
+  }
+}
+
+/* pequeños refinamientos del aspecto general */
+.cta-button {
+  margin-top: 12px;
+}
+
+/* Asegurar foco visible accesible */
+nav a:focus-visible,
+.cta-button:focus-visible,
+.benefit-link:focus-visible,
+footer a:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 4px;
+}
+
+/* Logo link */
+.logo-link img {
+  width: 60px;
+  height: auto;
+}
+
+.cta-button,
+.benefit-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--primary-contrast);
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cta-button {
+  margin-top: 16px;
+}
+
+.cta-button:hover,
+.benefit-link:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.hero {
+  background: #eef7fb;
+  border-radius: 12px;
+}
+
+.benefits {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.benefit {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.form-card {
+  border: 1px solid rgba(255, 0, 0, 0.842);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.form-actions {
+  align-items: center;
+}
+
+.form-text {
+  color: #c7dfff;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}

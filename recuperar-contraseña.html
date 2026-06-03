@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recuperar Contraseña - PNK Inmobiliaria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-light py-3 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo-link" aria-label="Ir al inicio de Inmobiliaria PNK">
+        <img src="logo.png" alt="Logo Inmobiliaria PNK" width="180">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro-propietario.html">Registrarme como Propietario</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro-gestor.html">Registrarme como Gestor Freelance</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container my-5">
+    <h1 class="mb-4">Recuperar Contraseña</h1>
+    <p class="lead">Ingresa tu correo electrónico registrado y te enviaremos un enlace para restablecer tu contraseña.</p>
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="usuario@ejemplo.com" required>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar Enlace de Recuperación</button>
+        <a href="index.html" class="btn btn-outline-secondary">Volver</a>
+      </div>
+    </form>
+
+    <div class="alert alert-info mt-4" role="alert">
+      Recibirás un correo con instrucciones para restablecer tu contraseña. Si no lo encuentras, revisa tu carpeta de spam.
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <small>&copy; 2026 PNK Inmobiliaria</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

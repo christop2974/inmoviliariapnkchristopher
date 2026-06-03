@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro Propietario - PNK Inmobiliaria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="py-3 mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo-link" aria-label="Ir al inicio de Inmobiliaria PNK">
+        <img src="logo.png" alt="Logo Inmobiliaria PNK" width="160">
+      </a>
+      <h1 class="h4 text-primary">Registro de Propietario</h1>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card p-4">
+          <h2 class="mb-4 text-center text-secondary">Completa tus datos</h2>
+          <form class="row g-3">
+            <!-- Rut -->
+            <div class="col-md-6">
+              <label for="rut" class="form-label">RUT</label>
+              <input type="text" class="form-control" id="rut" placeholder="12.345.678-9" required>
+            </div>
+
+            <!-- Nombre completo -->
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="col-md-6">
+              <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+              <input type="date" class="form-control" id="fechaNacimiento" required>
+            </div>
+
+            <!-- Correo electrónico -->
+            <div class="col-md-6">
+              <label for="correo" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="col-md-6">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+
+            <!-- Sexo -->
+            <div class="col-md-6">
+              <label for="sexo" class="form-label">Sexo</label>
+              <select id="sexo" class="form-select" required>
+                <option value="">Seleccione...</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <!-- Teléfono móvil -->
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Teléfono Móvil</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="+56 9 1234 5678" required>
+            </div>
+
+            <!-- Número de propiedad -->
+            <div class="col-md-6">
+              <label for="numPropiedad" class="form-label">N° de la Propiedad (Bienes Raíces)</label>
+              <input type="text" class="form-control" id="numPropiedad" required>
+            </div>
+
+            <!-- Botones -->
+            <div class="col-12 text-center mt-4">
+              <button type="submit" class="btn btn-success px-4">Registrarme</button>
+              <button type="reset" class="btn btn-secondary px-4">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <small>&copy; 2026 PNK Inmobiliaria</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

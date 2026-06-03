@@ -1,0 +1,28 @@
+genera la estructura base de una landing semántica con header con logo + nav, main con 2 section una hero y beneficios y un footer con datos de contacto. Incluye un h1 único y jerarquía correcta de encabezados
+modifa para que aplique el estilo del archivo estilo.css
+aplica la funcionalidad para que el sitio sea operable sólo con el teclado, mantén un orden lógico y haz clicables los elementos interactivos
+agrega un link en el nav que permita ir al sitio formulario.html
+agrega reglas de estilo para estilizar el formulario, haz uso de bootstrap 5
+agrega un <h1> al lado del logo con el título "Inmobiliaria PNK", además agrega link para que al hacer click redirija al index.html
+agrega en el <header> el logo con la <img> logo.png y un <h1> con el texto "Inmobiliaria PNK"
+crea archivo prompts.txt y agrega todos los prompts usados en este proyecto y agrega cada prompt nuevo
+quiero que elimines la clase inmoviliaria PNK y sea reemplazdo en su lugar con logo png y cumpla con cada ves que sea clickeado rediriga a indes html ademas configurar el que ocupa incio, beneficios, contacto y formulario que sea yn menu que este en la parte superior de la pagina y esten ordenados horizontalmente
+Créame una página web en HTML para una inmobiliaria llamada PNK Inmobiliaria, usa Bootstrap 5 y haz que sea responsive, con una estructura básica que tenga header, contenido principal y footer
+Agrega un header con un logo a la izquierda y un menú de navegación a la derecha, que tenga opciones como registrarse como propietario, gestor freelance, registrar propiedad, dashboard y contacto
+Haz una sección con dos columnas, donde a la izquierda vaya información de la empresa y a la derecha un formulario de login con usuario, contraseña, botón de ingresar y recuperar contraseña
+Crea un buscador de propiedades con selects para provincia, comuna y sector, y un botón de buscar usando Bootstrap
+Genera cards con Bootstrap para mostrar casas, cada una con un carrusel de imágenes, nombre, precio, código y un botón para ver más detalles
+Haz lo mismo pero ahora para departamentos y terrenos, manteniendo el mismo diseño, pero mostrando también precios en UF además de pesos
+Agrega una sección de beneficios con dos bloques de información, uno sobre gestión transparente y otro sobre comisiones justas, con títulos y descripciones
+Crea un footer simple con fondo oscuro, texto centrado y un mensaje de copyright del año 2026
+Créame una página HTML de detalle de propiedad para una inmobiliaria usando Bootstrap 5 que sea completamente responsive. Agrega un header con un logo alineado a la izquierda y 
+un menú de navegación con enlaces a inicio, beneficios y contacto. Genera un carrusel de imágenes para una casa con varias fotos, incluyendo controles de navegación, y haz que las imágenes tengan bordes redondeados y ocupen todo el ancho del contenedor. A un costado del carrusel, crea una sección con la información de la propiedad que incluya un título, una descripción y una lista de características.
+Creame una página HTML para registrar propiedades en una inmobiliaria llamada PNK Inmobiliaria utilizando Bootstrap 5, que sea completamente responsive. Agrega un header con un logo a la izquierda y un menú de navegación con enlaces a inicio
+registro de propietario, registro de gestor freelance y registrar propiedad. En el contenido principal, crea un formulario completo para registrar una propiedad con secciones bien organizadas. Incluye un select para tipo de propiedad con opciones como casa, departamento y terreno, además de un campo para ingresar el código de la propiedad.
+Agrega campos de ubicación como provincia, comuna y sector. Incorpora inputs numéricos para características como dormitorios, baños, área total y área construida. Añade campos para ingresar el precio en pesos y en UF. Incluye un textarea para la descripción de la propiedad. Agrega un input tipo file que permita subir entre 1 y 10 fotografías
+También crea una sección de extras con checkboxes como bodega, estacionamiento, logia, cocina amoblada, antejardín, patio trasero y piscina. Finalmente, agrega botones para registrar la propiedad y volver al inicio, junto con un footer oscuro con texto centrado y copyright del año 2026
+Asegúrate de que todo el diseño use el sistema de grillas de Bootstrap, sea responsive y tenga buenas prácticas de accesibilidad."
+Créame una página HTML para recuperar contraseña de una inmobiliaria llamada PNK Inmobiliaria utilizando Bootstrap 5, asegurando que sea completamente responsive. Agrega un header con un logo alineado a la izquierda y un menú de navegación con enlaces a inicio, registro de propietario y registro de gestor freelance. En el contenido principal
+crea una sección con un título de recuperar contraseña y un texto explicativo que indique al usuario que debe ingresar su correo electrónico para recibir un enlace de recuperación.
+Créame una página HTML tipo dashboard para una inmobiliaria llamada PNK utilizando Bootstrap 5, con un diseño moderno, limpio y completamente responsive. Incluye un header con fondo de color primario, un título alineado a la izquierda que diga 'Dashboard Inmobiliaria' y un botón a la derecha para volver al inicio. En el contenido principal
+crea cuatro tarhetas y cada tarjeta debe tener un número destacado en grande y una descripción debajo. Incluye al menos cuatro tarjetas: propiedades registradas, visitas agendadas, clientes nuevos y ventas cerradas

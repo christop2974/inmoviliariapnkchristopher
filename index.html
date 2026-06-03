@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PNK Inmobiliaria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-light py-3 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo-link" aria-label="Ir al inicio de Inmobiliaria PNK">
+        <img src="logo.png" alt="Logo Inmobiliaria PNK" width="180">
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="registro-propietario.html">Registrarme como Propietario</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro-gestor.html">Registrarme como Gestor Freelance</a></li>
+             <li class="nav-item"><a class="nav-link" href="registrar-propiedad.html">Registrar Propiedad</a></li>
+             <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <!-- Banner proyecto + login -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-8">
+        <h1>Nuestra empresa</h1>
+        <h5>surgio en 2026 el 22 de mayo como arrendar casas</h5>
+
+      <p>Desde entonces, hemos crecido y evolucionado, ofreciendo un servicio de calidad y confianza a nuestros clientes dandole lo que estam buscando sea buscar un arriendo , comprar casas, comprar algun terreno en algun sector que tenemos disponibles
+      </p>
+      </div>
+      <div class="col-md-4">
+        <h3>Autenticación</h3>
+        <form>
+         <input type="text" class="form-control mb-2" placeholder="Usuario">
+      <input type="password" class="form-control mb-2" placeholder="Contraseña">
+      <button class="btn btn-primary w-100 mb-2">Ingresar</button>
+      <a href="recuperar-contraseña.html" class="d-block text-center">Recuperar Contraseña</a>
+    </form>
+  </div>
+</section>
+
+    <!-- Buscador -->
+    <section class="mb-5">
+      <h4>Buscar Inmueble</h4>
+      <div class="row g-2">
+        <div class="col-md-3"><select class="form-select"><option>Provincia</option><option>Elqui</option><option>Limarí</option></select></div>
+        <div class="col-md-3"><select class="form-select"><option>Comuna</option><option>La Serena</option><option>Ovalle</option></select></div>
+        <div class="col-md-3"><select class="form-select"><option>Sector</option><option>El Milagro</option><option>Centro</option></select></div>
+        <div class="col-md-3"><button class="btn btn-danger w-100">Buscar</button></div>
+      </div>
+    </section>
+
+    <!-- Galería propiedades -->
+    <h1 class="text-start my-4">Propiedades Disponibles</h1>
+    <section id="galeria-casas" class="row g-4">
+      <!-- Casa 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div id="carouselCasa1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="casa1.jpg" class="d-block w-100" alt="Casa 1">
+              </div>
+              <div class="carousel-item">
+                <img src="casa1d.jpg" class="d-block w-100" alt="Casa 1 detalle">
+              </div>
+              <div class="carousel-item">
+                <img src="casa1e.jpg" class="d-block w-100" alt="Casa 1 extra">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5>Casa Sector limari, La Serena Centro</h5>
+            <p class="fw-bold">Precio $150.000.000 </p>
+            <p>Cód: A027462</p>
+            <a href="detalle-casa1.html" class="btn btn-danger">Quiero saber más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Casa 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div id="carouselCasa2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="casa2.jpg" class="d-block w-100" alt="Casa 2">
+              </div>
+              <div class="carousel-item">
+                <img src="casa2a.jpg" class="d-block w-100" alt="Casa 2 alternativa">
+              </div>
+              <div class="carousel-item">
+                <img src="casa2i.jpg" class="d-block w-100" alt="Casa 2 interior">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5>Casa Sector El Milagro, La Serena</h5>
+            <p class="fw-bold">Precio $200.000.000</p>
+            <p>Cód: A019274</p>
+            <a href="detalle-casa2.html" class="btn btn-danger">Quiero saber más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Casa 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div id="carouselCasa3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="casa3.jpg" class="d-block w-100" alt="Casa 3">
+              </div>
+              <div class="carousel-item">
+                <img src="casa3e.jpg" class="d-block w-100" alt="Casa 3 extra">
+              </div>
+              <div class="carousel-item">
+                <img src="casa3y.jpg" class="d-block w-100" alt="Casa 3 adicional">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5>Casa Sector Centro, Ovalle</h5>
+            <p class="fw-bold">Precio $126.000.000</p>
+            <p>Cód: A039824</p>
+            <a href="detalle-casa3.html" class="btn btn-danger">Quiero saber más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Terreno 1 - Detalle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+      </ul></nav>
+    </div>
+  </header>
+<!-- Departamentos -->
+<h1 class="text-start my-4">Departamentos Disponibles</h1>
+<section id="galeria-departamentos" class="row g-4">
+  <!-- Departamento 1 -->
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div id="carouselDepto1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="departamento1.png" class="d-block w-100" alt="Departamento 1"></div>
+          <div class="carousel-item"><img src="departamento1a.png" class="d-block w-100" alt="Departamento 1 vista 2"></div>
+          <div class="carousel-item"><img src="departamento1b.png" class="d-block w-100" alt="Departamento 1 vista 3"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepto1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepto1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5>Departamento Centro, La Serena</h5>
+        <p class="fw-bold">Precio $110.000.000 | UF 4.000</p>
+        <p>Cód: D001</p>
+        <a href="departamento1.html" class="btn btn-danger">Quiero saber más</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Departamento 2 -->
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div id="carouselDepto2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="departamento2.png" class="d-block w-100" alt="Departamento 2"></div>
+          <div class="carousel-item"><img src="departamento2a.png" class="d-block w-100" alt="Departamento 2 vista 2"></div>
+          <div class="carousel-item"><img src="departamento2b.png" class="d-block w-100" alt="Departamento 2 vista 3"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepto2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepto2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5>Departamento Sector El Milagro, La Serena</h5>
+        <p class="fw-bold">Precio $130.000.000 | UF 4.700</p>
+        <p>Cód: D002</p>
+        <a href="departamento2.html" class="btn btn-danger">Quiero saber más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Terrenos -->
+<h1 class="text-start my-4">Terrenos Disponibles</h1>
+<section id="galeria-terrenos" class="row g-4">
+  <!-- Terreno 1 -->
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div id="carouselTerreno1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="terreno1.webp" class="d-block w-100" alt="Terreno 1 vista 1"></div>
+          <div class="carousel-item"><img src="terreno1a.webp" class="d-block w-100" alt="Terreno 1 vista 2"></div>
+          <div class="carousel-item"><img src="terreno1b.webp" class="d-block w-100" alt="Terreno 1 vista 3"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTerreno1" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTerreno1" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+      <div class="card-body">
+        <h5>Terreno Sector Rural, Ovalle</h5>
+        <p class="fw-bold">Precio $80.000.000 | UF 2.900</p>
+        <p>Cód: T001</p>
+        <a href="terreno1.html" class="btn btn-danger">Quiero saber más</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terreno 2 -->
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div id="carouselTerreno2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="terreno2.webp" class="d-block w-100" alt="Terreno 2 vista 1"></div>
+          <div class="carousel-item"><img src="terreno2a.webp" class="d-block w-100" alt="Terreno 2 vista 2"></div>
+          <div class="carousel-item"><img src="terreno2b.webp" class="d-block w-100" alt="Terreno 2 vista 3"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTerreno2" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTerreno2" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+      <div class="card-body">
+        <h5>Terreno Sector Centro, La Serena</h5>
+        <p class="fw-bold">Precio $120.000.000 | UF 4.350</p>
+        <p>Cód: T002</p>
+        <a href="terreno2.html" class="btn btn-danger">Quiero saber más</a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    <!-- Beneficios -->
+    <section id="beneficios" class="benefits my-5">
+      <article class="benefit">
+        <h2>Gestión Transparente</h2>
+        <p>Propietarios y gestores freelance pueden administrar sus inmuebles de forma clara y segura fomentando a la confiabilidad de nuestro clientes y poder darles un mejor servicio y ver que es lo que buscan</p>
+      </article>
+      <article class="benefit">
+        <h2>Comisiones Justas</h2>
+        <p>Los gestores inmobiliarios freelance reciben comisión si logran concretar una venta reciben un porcentaje dependiendo de la vivienda que sea vendida.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <small>Registro Propietario - Registro Gestor - Panel Admin</small><br>
+    <small>&copy; 2026 PNK Inmobiliaria</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap
